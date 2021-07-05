@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<style>
+    .ok {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <div id="hop">
+
+
+    </div>
+    </ul>
+    <button id="them">
+        xóa
+    </button>
+    <button id="them1">
+        them
+    </button>
+    <button id="them2">
+        chuyendoi
+    </button>
+
+    <script>
+        $(document).ready(function () {
+           
+            $("#them").click(function () {
+               $("#hop").addClass("ok");
+               $("#hop").css({
+               "background-color" : "black"
+            })
+            })
+            $("#them1").click(function () {
+               $("#hop").removeClass("ok");
+            })
+            $("#them2").click(function () {
+               $("#hop").toggleClass("ok");
+            })
+
+        })
+    </script>
+</body>
+
+</html>
